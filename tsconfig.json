@@ -1,0 +1,39 @@
+{
+	"$schema": "https://json.schemastore.org/tsconfig",
+	"display": "Default",
+	"compilerOptions": {
+		"target": "ESNext",
+		"useDefineForClassFields": true,
+    "module": "NodeNext",
+		"moduleResolution": "NodeNext",
+		"skipLibCheck": true,
+
+		"resolveJsonModule": true,
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+		"isolatedModules": true,
+		"jsx": "react-jsx",
+		"outDir": "dist",
+
+		"noFallthroughCasesInSwitch": true,
+		"noUnusedLocals": false,
+		"noUnusedParameters": false,
+		"preserveWatchOutput": true,
+		"strict": true,
+		"strictNullChecks": true,
+		"allowJs": true,
+		"incremental": true,
+		"noUncheckedIndexedAccess": true,
+		"noPropertyAccessFromIndexSignature": false
+	},
+  "include": [
+		"codemods-v2/**/*.ts",
+		"codemods-v2/**/*.js",
+    "codemods-v2/**/*.tsx",
+		"codemods-v2/**/*.jsx"
+	],
+	"exclude": ["**/node_modules/**/*", "**/dist/**/*"],
+	"ts-node": {
+		"transpileOnly": true
+	}
+}
